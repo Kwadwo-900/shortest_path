@@ -51,10 +51,7 @@ class VillageState {
     }
 }
 
-let first = new VillageState(
-    "Post Office",
-    [{ place: "Post office", address: "Alice's House" }]
-);
+
 
 function runRobot(state, robot, memory) {
     for (let turn = 0; ; turn++) {
@@ -89,6 +86,15 @@ VillageState.random = function (parcelCount = 5) {
     }
     return new VillageState("Post Ofice", parcels);
 };
+
+/*
+let first = new VillageState(
+    "Post Office",
+    [{ place: "Post office", address: "Alice's House" }]
+);
+*/
+
+
 
 runRobot(VillageState.random(), randomRobot);
 
